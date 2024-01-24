@@ -1,0 +1,28 @@
+﻿<Window x:Class="WPF_FirstApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_FirstApp"
+        mc:Ignorable="d"
+        Title="Main" Height="456" Width="800"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="Yellow"/>
+            <Setter Property="Foreground" Value="Red"/>
+            <Setter Property="Width" Value="79"/>
+            <Setter Property="Height" Value="28"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <!--...-->
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Frame Name="frmMain" VerticalAlignment="Stretch" NavigationUIVisibility="Visible"/>
+        <Button Name="btnToPage01" Click="btnToPage01_Click" Margin="300,383,0,0" Content="To Page 01"/>
+        <Button Name="btnToPage02" Click="btnToPage02_Click" Margin="400,383,0,0" Content="To Page 02"/>
+    </Grid>
+</Window>

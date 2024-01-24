@@ -1,0 +1,20 @@
+﻿<Page x:Class="WPF_FirstApp.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF_FirstApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="323" d:DesignWidth="500"
+      Title="Page1">
+
+    <Grid Background="LightBlue">
+        <TextBlock 
+            TextAlignment="Center" 
+            FontSize="24" 
+            FontWeight="Bold" 
+            Text="Welcome to WPF"
+            Foreground="Red"/>
+    </Grid>
+</Page>
+ 
