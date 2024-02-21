@@ -92,6 +92,9 @@
                     <GridViewColumn
                          Header="Married"
                          DisplayMemberBinding="{Binding Path=Married}"/>
+                    <GridViewColumn
+                         Header="Major"
+                         DisplayMemberBinding="{Binding Path=Major.Major1}"/>
                 </GridView>
             </ListView.View>
         </ListView>

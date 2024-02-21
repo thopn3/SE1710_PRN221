@@ -1,0 +1,23 @@
+﻿@page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@functions{
+    [BindProperty]
+    public string Name {get; set;}
+}
+
+<h1>Welcome to Home page</h1>
+
+<div style="margin-top:20px">
+    <form method="post">
+        Name: <input name="Name"/>
+        <input type="submit" value="Get name"/>
+    </form>
+
+    @{
+        if (!string.IsNullOrEmpty(Name))
+        {
+            <span>Hello: @Name</span>
+        }
+    }
+</div>

@@ -1,0 +1,21 @@
+﻿@page
+@model ASP_NETCore_RazorPages.Pages.ProductModel
+
+<h1>Product list</h1>
+<span>Data from OnGet: @Model.Message</span>
+<p>
+    Data: @ViewData["data"]
+</p>
+
+<form method="post">
+    <label>Input message</label>
+    <input name="msg"/>
+    <input type="submit" value="Send message"/>
+</form>
+
+@{
+    if (ViewData["result"] != null)
+    {
+        <span>Message result: @ViewData["result"]</span>
+    }
+}
