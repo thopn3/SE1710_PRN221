@@ -9,8 +9,7 @@ namespace ASP_NETCore_RazorPages.Pages
         public string Message {  get; set; }
         public IActionResult OnGet()
         {
-            // Kiểm tra giá trị của Message
-            if (string.IsNullOrEmpty(Message))
+            if (HttpContext.Session.GetString("account")==null)
             {
                 return RedirectToPage("Index");
             }
