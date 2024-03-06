@@ -1,30 +1,28 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ASP_NETCore_RazorPages.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 
 namespace ASP_NETCore_RazorPages.Pages
 {
     public class ProductModel : PageModel
     {
+        private readonly SE1710_DBContext _context;
+
         [BindProperty]
-        public string Message {  get; set; }
-        public IActionResult OnGet()
+        public List<Product> listProducts { get; set; }
+        
+        public ProductModel(SE1710_DBContext _context)
         {
-            if (HttpContext.Session.GetString("account")==null)
-            {
-                return RedirectToPage("Index");
-            }
-            Message = "OnGet method";
-            ViewData["data"] = new { id = "1", name = "Marry" };
+            this._context = _context;
+        }
+
+        public async Task<IActionResult> OnGet()
+        {
+            listProducts = await _context.Products.ToListAsync();
             return Page();
         }
 
-        public void OnPost()
-        {
-            // Lấy dữ liệu từ Input text trên View
-            var msg = Request.Form["msg"];
-            // Gán cho 1 ViewData
-            ViewData["result"] = msg;
-            Message = msg;
-        }
+
     }
 }

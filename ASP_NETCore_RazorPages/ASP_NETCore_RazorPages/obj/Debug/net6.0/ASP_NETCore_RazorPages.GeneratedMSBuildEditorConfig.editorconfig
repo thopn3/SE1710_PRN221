@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Materials\PRN221\Demo\ASP_NETCore_RazorPages\ASP_NETCore_RazorPages
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Materials/PRN221/Demo/ASP_NETCore_RazorPages/ASP_NETCore_RazorPages/Pages/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Materials/PRN221/Demo/ASP_NETCore_RazorPages/ASP_NETCore_RazorPages/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

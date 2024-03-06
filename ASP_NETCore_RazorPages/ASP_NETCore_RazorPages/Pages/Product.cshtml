@@ -1,21 +1,57 @@
 ﻿@page
 @model ASP_NETCore_RazorPages.Pages.ProductModel
 
-<h1>Product list</h1>
-<span>Data from OnGet: @Model.Message</span>
-<p>
-    Data: @ViewData["data"]
-</p>
-
-<form method="post">
-    <label>Input message</label>
-    <input name="msg"/>
-    <input type="submit" value="Send message"/>
-</form>
-
-@{
-    if (ViewData["result"] != null)
-    {
-        <span>Message result: @ViewData["result"]</span>
-    }
-}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h3 style="text-align:center">List of Products</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table table-hover table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>UnitsInStock</th>
+                        <th>Status</th>
+                        <th colspan="2">Function</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        foreach(var p in Model.listProducts)
+                        {
+                            <tr>
+                                <td>@p.ProductId</td>
+                                <td>@p.ProductName</td>
+                                <td>@p.UnitPrice</td>
+                                <td>@p.UnitsInStock</td>
+                                <td>
+                                    @{
+                                        if (p.Discontinued == true)
+                                        {
+                                            <span>Out of stock</span>
+                                        }
+                                        else
+                                        {
+                                            <span>In stock</span>
+                                        }
+                                    }
+                                </td>
+                                <td>
+                                    <a asp-page="Edit" asp-route-id="@p.ProductId">Edit</a>
+                                </td>
+                                <td>
+                                    <a asp-route="Delete" asp-route-id="@p.ProductId">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

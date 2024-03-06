@@ -1,4 +1,4 @@
-using ASP_NETCore_RazorPages.Models;
+//using ASP_NETCore_RazorPages.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Text.Json;
@@ -7,8 +7,8 @@ namespace ASP_NETCore_RazorPages.Pages
 {
     public class LoginModel : PageModel
     {
-        [BindProperty]
-        public Account Account { get; set; }
+        //[BindProperty]
+        //public Account Account { get; set; }
         public IActionResult OnGet()
         {
             if (HttpContext.Session.GetString("account") == null)
@@ -24,11 +24,11 @@ namespace ASP_NETCore_RazorPages.Pages
                 return Page();
             }
 
-            if(Account.Email.Equals("admin@fpt.edu.vn") && Account.Password.Equals("admin"))
-            {
-                HttpContext.Session.SetString("account", JsonSerializer.Serialize(Account));
-                return RedirectToPage("Product");
-            }
+            //if(Account.Email.Equals("admin@fpt.edu.vn") && Account.Password.Equals("admin"))
+            //{
+            //    HttpContext.Session.SetString("account", JsonSerializer.Serialize(Account));
+            //    return RedirectToPage("Product");
+            //}
 
             TempData["msg"] = "Email or password incorrect.";
             return Page();
