@@ -65,3 +65,4 @@ D:\Materials\PRN221\Demo\ASP_NETCore_RazorPages\ASP_NETCore_RazorPages\bin\Debug
 D:\Materials\PRN221\Demo\ASP_NETCore_RazorPages\ASP_NETCore_RazorPages\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 D:\Materials\PRN221\Demo\ASP_NETCore_RazorPages\ASP_NETCore_RazorPages\obj\Debug\net6.0\ASP_NETCore_RazorPages.csproj.AssemblyReference.cache
 D:\Materials\PRN221\Demo\ASP_NETCore_RazorPages\ASP_NETCore_RazorPages\obj\Debug\net6.0\ASP_NETCore_RazorPages.csproj.CopyComplete
+D:\Materials\PRN221\Demo\ASP_NETCore_RazorPages\ASP_NETCore_RazorPages\bin\Debug\net6.0\libman.json

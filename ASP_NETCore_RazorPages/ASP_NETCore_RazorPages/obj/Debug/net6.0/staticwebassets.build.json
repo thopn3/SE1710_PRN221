@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Gibve7QKttrIWgNvwCDN5GgKVCOm8BJsyFSxBC6SQcs=",
+  "Hash": "ab3Xyo+8h2el+etjECNWYupm7TKOCQlHpr1uvL1Jtxg=",
   "Source": "ASP_NETCore_RazorPages",
   "BasePath": "_content/ASP_NETCore_RazorPages",
   "Mode": "Default",
@@ -55,12 +55,12 @@
       "OriginalItemSpec": "wwwroot\\css\\layoutAdmin.css"
     },
     {
-      "Identity": "D:\\Materials\\PRN221\\Demo\\ASP_NETCore_RazorPages\\ASP_NETCore_RazorPages\\wwwroot\\js\\script.js",
+      "Identity": "D:\\Materials\\PRN221\\Demo\\ASP_NETCore_RazorPages\\ASP_NETCore_RazorPages\\wwwroot\\js\\script_signalr.js",
       "SourceId": "ASP_NETCore_RazorPages",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Materials\\PRN221\\Demo\\ASP_NETCore_RazorPages\\ASP_NETCore_RazorPages\\wwwroot\\",
       "BasePath": "_content/ASP_NETCore_RazorPages",
-      "RelativePath": "js/script.js",
+      "RelativePath": "js/script_signalr.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -71,7 +71,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\script.js"
+      "OriginalItemSpec": "wwwroot\\js\\script_signalr.js"
     },
     {
       "Identity": "D:\\Materials\\PRN221\\Demo\\ASP_NETCore_RazorPages\\ASP_NETCore_RazorPages\\wwwroot\\libs\\css\\bootstrap.min.css",
@@ -91,6 +91,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\libs\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "D:\\Materials\\PRN221\\Demo\\ASP_NETCore_RazorPages\\ASP_NETCore_RazorPages\\wwwroot\\microsoft\\signalr\\dist\\browser\\signalr.js",
+      "SourceId": "ASP_NETCore_RazorPages",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Materials\\PRN221\\Demo\\ASP_NETCore_RazorPages\\ASP_NETCore_RazorPages\\wwwroot\\",
+      "BasePath": "_content/ASP_NETCore_RazorPages",
+      "RelativePath": "microsoft/signalr/dist/browser/signalr.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\microsoft\\signalr\\dist\\browser\\signalr.js"
+    },
+    {
+      "Identity": "D:\\Materials\\PRN221\\Demo\\ASP_NETCore_RazorPages\\ASP_NETCore_RazorPages\\wwwroot\\microsoft\\signalr\\dist\\browser\\signalr.min.js",
+      "SourceId": "ASP_NETCore_RazorPages",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Materials\\PRN221\\Demo\\ASP_NETCore_RazorPages\\ASP_NETCore_RazorPages\\wwwroot\\",
+      "BasePath": "_content/ASP_NETCore_RazorPages",
+      "RelativePath": "microsoft/signalr/dist/browser/signalr.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\microsoft\\signalr\\dist\\browser\\signalr.min.js"
     }
   ]
 }
